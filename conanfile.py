@@ -100,7 +100,7 @@ class KnowhereConan(ConanFile):
         self.requires("opentelemetry-cpp/1.8.1.1@milvus/dev")
         if self.settings.os != "Macos":
             self.requires("libunwind/1.7.2")
-            self.requires("openblas/0.3.23@milvus/dev")
+            self.requires("openblas/0.3.23@sdp/stable")
         if self.options.with_ut:
             self.requires("catch2/3.3.1")
         if self.options.with_benchmark:
